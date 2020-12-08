@@ -4,12 +4,12 @@ using namespace std;
 int main()
 {
 	int a[10]={2,5,8,10,12,17,23,36,39};
-	int x=2;
+	int x=5;
 	int n=sizeof(a)/sizeof(a[0]);
 	int low=0;
 	int high=n-1;
 	int mid;
-	bool flag=true;
+	bool flag=false;
 	while(low<=high)
 	{
 		mid=(low+high)/2;
