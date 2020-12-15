@@ -4,11 +4,11 @@ using namespace std;
 
 int main()
 {
-	string a[]={"h","e","l","l","o"};
+	string a[]={"v","i","v","e","k"};
 	int start=0;
 	int n=sizeof(a)/sizeof(a[0]);
 	int end=n-1;
-	while(start<end)
+	while(start<end && end>=0)
 	{
 		swap(a[start],a[end]);
 		start++;
