@@ -51,13 +51,14 @@ void merge(vector<int >v1,vector<int >v2)
 			i++;
 		}
 	}
+
 }
 
 int main()
 {
 
-	std::vector<int > v1={11,31,51,71};
-	std::vector<int > v2={0,2,6,8,9};
+	std::vector<int > v1={1,2,7,8,90};
+	std::vector<int > v2={3,4,80};
 	//int lb=0;
 	//int mid=(0+v2.size())/2;
 	//int ub=v2.size();
@@ -66,7 +67,25 @@ int main()
 	{
 		cout<<v3[i]<<endl;
 	}
-	return 0;
 
-	
+	int low=0;
+	int high=v3.size()-1;
+	double final;
+
+	if(v3.size()%2==0)
+	{
+		
+		int mid=(low+high)/2;
+		 final=(v3[mid]+v3[mid+1])/2;
+		cout<<"median is"<<final;
+	}
+	else
+	{
+		int mid=(low+high)/2;
+		cout<<"median is:"<<v3[mid];
+
+	}
+	//cout<<v3.size();
+
+	return 0;
 }
